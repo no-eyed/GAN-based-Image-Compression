@@ -70,3 +70,21 @@ main()
 # torch.Size([3, 667, 1000])
 # PSNR: 21.919089837802936 dB
 # SSIM: 0.7809019191751623
+
+# Sea
+
+# torch.Size([8, 300, 480])
+# torch.Size([3, 1200, 1920])
+
+# Ishowspeed
+
+# torch.Size([28, 103, 155])
+# torch.Size([3, 412, 620])
+
+# Beach
+
+# torch.Size([8, 125, 200])
+# torch.Size([3, 500, 800])
+
+
+

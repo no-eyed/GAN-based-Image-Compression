@@ -5,8 +5,7 @@ IMG_WIDTH = 178
 IMG_HEIGHT = 218
 latent_size = 200
 
-from CnD import num_channels_in_encoder
-# num_channels_in_encoder = 8
+num_channels_in_encoder = 28
 
 
 device = torch.device('cpu')
