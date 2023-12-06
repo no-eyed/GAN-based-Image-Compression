@@ -9,7 +9,7 @@ import copy
 from skimage.metrics import peak_signal_noise_ratio as psnr
 from skimage.metrics import structural_similarity as ssim
 
-num_images_to_show = 3
+num_images_to_show = 1
 
 f, axarr = plt.subplots(num_images_to_show, 4)
 
@@ -76,36 +76,36 @@ def ShowGraph(i, img, img_8, img_16, img_28):
     f.set_figwidth(20)
 
 
-img = Image.open('inputs/highres2.jpg')
-img_8 = Image.open('8R_highres2.jpg')
-img_16 = Image.open('16R_highres2.jpg')
-img_28 = Image.open('28R_highres2.jpg')
+img = Image.open('inputs/highres11.jpg')
+img_8 = Image.open('8R_highres11.jpg')
+img_16 = Image.open('16R_highres11.jpg')
+img_28 = Image.open('28R_highres11.jpg')
 
-Img = Image.open('inputs/highres4.jpg')
-Img_8 = Image.open('8R_highres4.jpg')
-Img_16 = Image.open('16R_highres4.jpg')
-Img_28 = Image.open('28R_highres4.jpg')
+# Img = Image.open('inputs/highres4.jpg')
+# Img_8 = Image.open('8R_highres4.jpg')
+# Img_16 = Image.open('16R_highres4.jpg')
+# Img_28 = Image.open('28R_highres4.jpg')
 
-IMg = Image.open('inputs/highres5.jpg')
-IMg_8 = Image.open('8R_highres5.jpg')
-IMg_16 = Image.open('16R_highres5.jpg')
-IMg_28 = Image.open('28R_highres5.jpg')
+# IMg = Image.open('inputs/highres5.jpg')
+# IMg_8 = Image.open('8R_highres5.jpg')
+# IMg_16 = Image.open('16R_highres5.jpg')
+# IMg_28 = Image.open('28R_highres5.jpg')
 
-iMG = Image.open('inputs/highres8.jpg')
-iMG_8 = Image.open('8R_highres8.jpg')
-iMG_16 = Image.open('16R_highres8.jpg')
-iMG_28 = Image.open('28R_highres8.jpg')
+# iMG = Image.open('inputs/highres8.jpg')
+# iMG_8 = Image.open('8R_highres8.jpg')
+# iMG_16 = Image.open('16R_highres8.jpg')
+# iMG_28 = Image.open('28R_highres8.jpg')
 
-imG = Image.open('inputs/highres9.jpg')
-imG_8 = Image.open('8R_highres9.jpg')
-imG_16 = Image.open('16R_highres9.jpg')
-imG_28 = Image.open('28R_highres9.jpg')
+# imG = Image.open('inputs/highres9.jpg')
+# imG_8 = Image.open('8R_highres9.jpg')
+# imG_16 = Image.open('16R_highres9.jpg')
+# imG_28 = Image.open('28R_highres9.jpg')
 
 
-# ShowGraph(0, img, img_8, img_16, img_28)
+ShowGraph(0, img, img_8, img_16, img_28)
 # ShowGraph(1, Img, Img_8, Img_16, Img_28)
-ShowGraph(0, IMg, IMg_8, IMg_16, IMg_28)
-ShowGraph(1, iMG, iMG_8, iMG_16, iMG_28)
-ShowGraph(2, imG, imG_8, imG_16, imG_28)
+# ShowGraph(0, IMg, IMg_8, IMg_16, IMg_28)
+# ShowGraph(1, iMG, iMG_8, iMG_16, iMG_28)
+# ShowGraph(2, imG, imG_8, imG_16, imG_28)
 
 plt.show()

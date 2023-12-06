@@ -11,8 +11,8 @@ def calculate_ssim(img1, img2):
 
 def main():
     # Load the images
-    img1 = cv2.imread('./inputs/highres2.jpg')  # Replace 'image1.jpg' with the path to your first image
-    img2 = cv2.imread('./28R_highres2.jpg')  # Replace 'image2.jpg' with the path to your second image
+    img1 = cv2.imread('./inputs/highres11.jpg')  # Replace 'image1.jpg' with the path to your first image
+    img2 = cv2.imread('./8R_highres11.jpg')  # Replace 'image2.jpg' with the path to your second image
 
     if img1.shape != img2.shape:
     # Resize img2 to match the shape of img1

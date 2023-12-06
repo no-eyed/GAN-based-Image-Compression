@@ -5,10 +5,9 @@ def CnD():
     import torchvision.utils
     from PIL import Image
     import EncoderGenerator
-    import cv2
     from skimage.metrics import structural_similarity as ssim
 
-    num_channels_in_encoder = 28
+    num_channels_in_encoder = 8
 
     # Create instances of the models
     netE = EncoderGenerator.Encoder()
@@ -19,7 +18,7 @@ def CnD():
     netG.load_state_dict(torch.load("models/netG" + str(num_channels_in_encoder) + ".model", map_location=torch.device('cpu')))
 
     image_dir = "./inputs/"
-    image_name = "highres9.jpg"
+    image_name = "highres11.jpg"
 
     img = Image.open(image_dir + image_name)
     
