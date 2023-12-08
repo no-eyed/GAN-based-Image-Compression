@@ -47,25 +47,8 @@ def CnD():
         transforms.ToPILImage()
     ])
     
-    #print(encoded_img.cpu().type())
-    #print(reconstructed_img.cpu().type())
     print(encoded_img.size())
     print(preprocess_img.size())
 
-    # # Load the image using PIL
-    # image_path = 'path/to/your/image.jpg'
-    # img = Image.open(image_path)
-
-    # # Define a transformation to convert the image to a PyTorch tensor
-    # transform = transforms.ToTensor()
-
-    # # Apply the transformation to the image
-    # img_tensor = transform(img)
-
-    # # Print the shape of the resulting tensor
-    # print("Shape of the tensor:", img_tensor.shape
-
-    # reconstructed_img_denorm = denormalize(reconstructed_img.squeeze().cpu())
-    # reconstructed_img_denorm.save("reconstructed_" + image_name)
     
-    torchvision.utils.save_image(reconstructed_img, str(num_channels_in_encoder) + 'R_' + image_name)
+    torchvision.utils.save_image(reconstructed_img, str(num_channels_in_encoder) + "_Channels/" + str(num_channels_in_encoder) + 'R_' + image_name)
